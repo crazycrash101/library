@@ -1,1 +1,1 @@
-A simplae library
+A simple library

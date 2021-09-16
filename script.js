@@ -50,21 +50,40 @@ function AddRow(title = "Title Not Specified",author = "Author Not Mentioned",pa
     let row = document.createElement("div");
     row.classList.add("displayRow")
     let c1 = document.createElement("div");
-    row.appendChild(c1)
-    c1.textContent = title;
+    let p1 = document.createElement("p");
+    c1.appendChild(p1);
+    row.appendChild(c1);
+    p1.textContent = title;
+
     let c2 = document.createElement("div");
+    let p2 = document.createElement("p");
+    c2.appendChild(p2);
     row.appendChild(c2)
-    c2.textContent = author;
+    p2.textContent = author;
+
     let c3 = document.createElement("div");
+    let p3 = document.createElement("p");
+    c3.appendChild(p3);
     row.appendChild(c3)
-    c3.textContent = pages;
+    p3.textContent = pages;
+
     let c4 = document.createElement("div");
+    let p4 = document.createElement("p");
+    c4.appendChild(p4);
     row.appendChild(c4)
     if(read === "Yes"){
-        c4.textContent ="Read";
+        p4.textContent ="Read";
     } else if(read === "No") {
-        c4.textContent = "Not Read";
+        p4.textContent = "Not Read";
     }
+
+    let c5 = document.createElement("div");
+    row.appendChild(c5);
+
+    let deleteButton = document.createElement("button");
+    deleteButton.textContent = "DELETE";
+    deleteButton.classList.add('deleteButton');
+    c5.appendChild(deleteButton)
     libraryContent.appendChild(row);
 }
 
@@ -110,8 +129,6 @@ submitButton.addEventListener("click",e => {
     resetValues();
 })    
 
-
-/* Viewing of Books */
 
 
 

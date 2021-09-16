@@ -1,3 +1,38 @@
+h1 {
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 3rem;
+    border-bottom: 2px dotted brown;
+    color: brown;
+}
+h3 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    font-weight: bolder;
+}
+
+#addBook {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    width: 150px;
+    height: 80px;
+    font-size: 30px;
+    background-color:white;
+    color: brown;
+    border-radius: 8px;
+}
+#addBook:hover{
+    background-color: brown;
+    color: white;
+}
+
 .modal {
     position: fixed;
     top: 50%;
@@ -9,7 +44,7 @@
     padding: 5px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 500px;
     max-width: 25%;
     z-index: 10;
     background-color: white;
@@ -17,12 +52,78 @@
 .modal.active {
     transform: translate(-50%,-50%) scale(1);
 }
-
-
-#row5 > button {
-    cursor: pointer;
+#row6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.row {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.row:not(#row4):not(#row5) > input {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid brown;
+    box-shadow: 1px 1px 3px brown;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
 }
 
+
+
+#submit{
+    display: block;
+    margin: auto;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+    color: brown;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 6px;
+}
+#submit:hover {
+    color:white;
+    background-color: brown;
+    
+}
+
+#row6 >  button {
+    cursor: pointer;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:white;
+    color: brown;
+    width: 25%;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+#row6 >  button:hover {
+    color:white;
+    background-color: brown;
+}
+
+#row4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#row4 > div > label {
+    color: brown;
+}
+#row4 > div > input {
+    filter: grayscale(1);
+}
 
 #overlay {
     position: fixed;
@@ -40,11 +141,38 @@
 }
 
 #libraryContent {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
-.displayRow{
+#libraryContent > div {
     display: flex;
     height: auto;
-    background-color: skyblue;
+    justify-content: space-around;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-bottom: 1px dashed brown;
+}
+#libraryContent > div > div {
+    width: 200px;
+    height: auto;
+    text-align: center;
+}
+#libraryContent > div > div > button {
+    
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: white;
+    color: brown;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+}
+#libraryContent > div > div > button:hover {
+    color:white;
+    background-color: brown;
 }

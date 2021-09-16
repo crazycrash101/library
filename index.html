@@ -7,7 +7,6 @@
 
     <body>
         <h1>Your personal Library</h1>
-        <hr>
         <button id="addBook" class="addBooks" data-modal-target>Add Book</button>
         <div class="modal" id ="modals"> 
             <form>       
@@ -25,13 +24,19 @@
                 </div>
                 <div id="row4" class="row">
                     <h3>Have you finished reading it?</h3>
-                    <input type="radio" class="input-radio" id="readY" name="status"  value="Yes">
-                    <label for="readY">Yes</label>
-                    <input type="radio" id="readN" class="input-radio" name="status" value="No" checked>
-                    <label for="readN">No</label>
+                    <div>
+                        <input type="radio" class="input-radio" id="readY" name="status"  value="Yes">
+                        <label for="readY">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="readN" class="input-radio" name="status" value="No" checked>
+                        <label for="readN">No</label>
+                    </div>
+                    
+                    
                 </div>
                 <div id="row5" class="row">
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit" value="ADD">
                 </div>
             </form>    
             <div id="row6" class="row">
@@ -40,6 +45,14 @@
             </div>
         </div>
         <div id="overlay"></div>
-        <div id="libraryContent"></div>
+        <div id="libraryContent">
+            <div id="titleRow">
+                <div><p>Book Title</p></div>
+                <div><p>Name of the Author</p></div>
+                <div><p>No. of Pages</p></div>
+                <div><p>Read/Not Read<p></p></div>
+                <div></div>
+            </div> 
+        </div>
     </body>
 </html>
