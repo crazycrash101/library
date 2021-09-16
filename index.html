@@ -9,32 +9,37 @@
         <h1>Your personal Library</h1>
         <hr>
         <button id="addBook" class="addBooks" data-modal-target>Add Book</button>
-        <div class="modal" id ="modals">
-            <div id="row1" class="row">
-                <h3>Title of your book</h3>
-                <input type="text" class="input-text" id="name">
-            </div>
-            <div id="row2" class="row">
-                <h3>Name of the Author</h3>
-                <input type="text" class="input-text" id="author">
-            </div>
-            <div id="row3" class="row">
-                <h3>No. of pages in the book</h3>
-                <input type="text" class="input-text" id="pages">
-            </div>
-            <div id="row4" class="row">
-                <h3>Have you finished reading it?</h3>
-                <input type="radio" class="input-text" id="readY" name="status"  value="Yes">
-                <label for="readY">Yes</label>
-                <input type="radio" id="readN" class="input-text" name="status" value="No">
-                <label for="readN">No</label>
-            </div>
-            <div id="row5" class="row">
-                <button>Submit</button>
-                <button>Clear</button>
+        <div class="modal" id ="modals"> 
+            <form>       
+                <div id="row1" class="row" action="">
+                    <h3>Title of your book</h3>
+                    <input type="text" class="input-text" id="name" required>
+                </div>
+                <div id="row2" class="row">
+                    <h3>Name of the Author</h3>
+                    <input type="text" class="input-text" id="author" required>
+                </div>
+                <div id="row3" class="row">
+                    <h3>No. of pages in the book</h3>
+                    <input type="number" class="input-text" id="pages" min="1" step="1">
+                </div>
+                <div id="row4" class="row">
+                    <h3>Have you finished reading it?</h3>
+                    <input type="radio" class="input-radio" id="readY" name="status"  value="Yes">
+                    <label for="readY">Yes</label>
+                    <input type="radio" id="readN" class="input-radio" name="status" value="No" checked>
+                    <label for="readN">No</label>
+                </div>
+                <div id="row5" class="row">
+                    <input type="submit" id="submit">
+                </div>
+            </form>    
+            <div id="row6" class="row">
+                <button id="clear">Clear</button>
                 <button id="close" >Close</button>
             </div>
         </div>
         <div id="overlay"></div>
+        <div id="libraryContent"></div>
     </body>
 </html>

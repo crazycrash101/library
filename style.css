@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
-    transition: 200ms ease-in-out;
+    transition: 100ms ease-in-out;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
@@ -37,4 +37,14 @@
 #overlay.active {
     opacity: 1;
     pointer-events: all ;
+}
+
+#libraryContent {
+    display: flex;
+    flex-direction: column;
+}
+.displayRow{
+    display: flex;
+    height: auto;
+    background-color: skyblue;
 }
