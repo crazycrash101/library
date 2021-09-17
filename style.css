@@ -176,3 +176,26 @@ h3 {
     color:white;
     background-color: brown;
 }
+
+#titleRow {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-bottom: 1px dashed brown;
+}
+#titleRow > div {
+    flex:1;
+    text-align: center;
+}
+
+.readToggleButton {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgba(163, 45, 45, 0.226);
+    border-radius: 6px;
+}
